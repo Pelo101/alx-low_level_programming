@@ -4,23 +4,21 @@
  * main -Entry point
  *
  * Return: Always 0 (Success)
- */
-	int main(void)
+ */ 
+
+	int main (void)
 
 
 {  
 
 	char c;
 
-	char c = 'a';
-	
-	while (c <= 'z')
-
+	for (c='a'; c<='z'; c++)
 
 
 	{
 		putchar(c);
-		c++;
+	
 
 	}
 
