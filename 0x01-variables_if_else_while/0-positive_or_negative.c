@@ -2,7 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main - entry point
+/**
+ * main - entry point
  *Description:	Write code that displays whether a number is negative or positive
  *
  * Return: 0(Succesful)
@@ -29,6 +30,6 @@
 			printf("%d is zero\n", n);
                 }
 
-		return: (0);
+return (0);
 }
 
