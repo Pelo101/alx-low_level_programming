@@ -13,7 +13,7 @@
 
 	{
 
-		if(c!= 'e' && c!= 'q')
+		if (c != 'e' && c != 'q')
 
 		{
 			putchar(c);
