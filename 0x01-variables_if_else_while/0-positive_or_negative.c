@@ -4,7 +4,7 @@
 
 /**
  * main - entry point
- *Description:	Write code that displays whether a number is negative or positive
+ *Description: code that displays whether a number is negative or positive
  *
  * Return: 0(Succesful)
  */
@@ -28,8 +28,8 @@
 		else if (n == 0)
 		{
 			printf("%d is zero\n", n);
-                }
+		}
 
-return (0);
+		return (0);
 }
 
