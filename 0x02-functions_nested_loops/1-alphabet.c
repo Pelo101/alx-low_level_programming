@@ -3,6 +3,7 @@
 
 /**
  * main - function to print abc
+ * Description: Print alphabet
  *
  * Return: Always 0 (success)
  */
