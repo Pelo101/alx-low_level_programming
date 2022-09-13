@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 
 		char letter = 'a';
 
-		while ( letter  <= 'z')
+		while (letter  <= 'z')
 
 		{
 			_putchar(letter);
