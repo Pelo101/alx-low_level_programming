@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 	{
 
 
-		char letter = 'a'
+		char letter = 'a';
 
 		while ( letter  <= 'z')
 
