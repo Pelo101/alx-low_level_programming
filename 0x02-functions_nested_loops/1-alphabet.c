@@ -20,9 +20,9 @@ void print_alphabet(void)
 
 	}
 
-	_puctchar('\n');
+	_putchar('\n');
 
-	return (0);
+
 
 
 }
