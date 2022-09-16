@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _isupper - checks if charcater is uppercase or not
- * @c: character to  be tested
- * Return: 1 (succesful) 0 (not succesful)
+ * main - entry
+ * _isupper - function checks whether character is uppercase
+ *@c: integer to be tested
+ * Return: 1 (success) 0 (not success)
  */
 
 
