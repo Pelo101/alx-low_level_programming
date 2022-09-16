@@ -11,27 +11,32 @@ void print_diagonal(int n)
 {
 	int c, i;
 
-	if (n  >  0)
+	c = 0;
+
+	while (n  >  0)
 	{
 
-		for  (c =  0;  c  <  n;  c++)
-		{
+		i  =  c;
+	}
+	while (i  >  0)
+	{
 
-			for (i  = 0;  i  <  n;  n++)
-			{
-				_putchar(' ');
+		_putchar(' ');
 
-			}
-			_putchar('\\');
+		i--
+	}
+	_putchar('\\');
+	_putchar('\n');
 
-		}
+	c++;
+	n--;
 
-		if  (c  == (n - 1))
-		{
-			continue;
-
-		}
+	if (c  <  i)
+	{
 		_putchar('\n');
 
 	}
+
 }
+
+
