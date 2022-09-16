@@ -8,35 +8,37 @@ i#include <stdio.h>
  */
 
 void print_diagonal(int n)
+
 {
-	int c, i;
 
-	c = 0;
+	int len, space;
 
-		while (n  >  0)
+	if (n  > 0 )
 	{
 
-		i  =  c;
 
-		while (i  >  0)
+
+		for (len = 0; len < n; len++)
 		{
 
-		_putchar(' ');
+			for (space = 0; space < len; space++)
+			{
 
-		i--;
+				_putchar(' ');
+			}
+
+			_putchar('\\');
+
+			if (len == (n - 1))
+			{
+
+				continue;
+			}
+			_putchar('\n');
 		}
-		_putchar('\\');
-		_putchar('\n');
 
-		c++;
-		n--;
+
+
 	}
-
-	if (c  <  1)
-
 	_putchar('\n');
-
-
 }
-
-
