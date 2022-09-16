@@ -23,7 +23,7 @@ void print_diagonal(int n)
 
 		_putchar(' ');
 
-		i--
+		i--;
 	}
 	_putchar('\\');
 	_putchar('\n');
@@ -31,7 +31,7 @@ void print_diagonal(int n)
 	c++;
 	n--;
 
-	if (c  <  i)
+	if (c  <  1)
 	{
 		_putchar('\n');
 
