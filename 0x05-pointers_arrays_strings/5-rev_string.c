@@ -2,7 +2,7 @@
 # include "main.h"
 
 /**
- * rev_ string - Reverse a string
+ * rev_string - Reverse a string
  * @s: string
  *
  * Return: 0 (success)
@@ -17,9 +17,9 @@ void rev_string(char *s)
 		{
 			tmp =   *(s + i);
 
-			*(s  + i )  =  *(s  + len  -i  -1);
+			*(s  + i )  =  *(s  + len  -  i  - 1);
 
-			*(s  + len  -i  - 1)  = tmp;
+			*(s  + len  -  i  - 1)  = tmp;
 		}
 }
 
