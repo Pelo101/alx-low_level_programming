@@ -5,10 +5,10 @@
 /**
  * print_rev - prints a string in reverse
  * @s: string to reverse
- * Return: void
+ * Return: 0 (success)
  */
 
-void rev_string(char *s)
+void print_rev(char *s)
 {
 	int len  = strlen(s);
 
