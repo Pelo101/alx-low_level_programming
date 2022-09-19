@@ -1,7 +1,7 @@
 # include "main.h"
 
 /**
- * _strcpy: copies the content of one string to another
+ * _strcpy - copies the content of one string to another
  * @dest: destination string
  * @src: source string
  *
@@ -21,7 +21,7 @@ char *_strcpy(char *dest, char *src)
 		*(dest + i)  =  *(src  + i);
 		i++;
 	}
-	*(dest  + i )  = '\0';
+	*(dest  + i)  = '\0';
 
 
 	return (dest);
