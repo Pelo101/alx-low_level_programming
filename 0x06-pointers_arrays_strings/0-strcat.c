@@ -17,8 +17,9 @@ char *_strcat(char *dest, char *src)
 		while (dest[box++])
 			size++;
 
-		for (box = 0; src[box]; box++)
+		for (box = 0 ; src[box] ; box++)
 			dest[size++]  = src[box];
+
 
 		return (dest);
 }
