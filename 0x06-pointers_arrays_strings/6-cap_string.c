@@ -13,7 +13,7 @@ char *cap_string(char *s)
 	int i = 0;
        	int j = 0;
 
-	char a[] =  " \t\n , ; . ! ? \" () {}";
+	char a[] =  " \t\n , ; . ! ? \ " () {}";
 
 	while (*(s  + i ))
 
