@@ -10,7 +10,8 @@
 char *cap_string(char *s)
 {
 
-	int i = 0, j;
+	int i = 0;
+       	int j = 0;
 
 	char a[] =  " \t\n , ; . ! ? \" () {}";
 
@@ -25,7 +26,7 @@ char *cap_string(char *s)
 
 			else
 			{
-				for (j = 0;  j <= 12; j++)
+				for (j  =  0;  j  <=  12;  j++)
 				{
 					if (a[j] == *(s + i - 1))
 
