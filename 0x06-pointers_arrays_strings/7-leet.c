@@ -12,18 +12,19 @@ char *leet(char *s)
 	int i, j;
 
 	char a[] =  "aAeoOtT1L";
-	Char b[] =  "443007711";
+	char b[] =  "443007711";
 
 
-	for (i = 0;  *(s  +  i);  i++)
+	for (i =  0;  *(s  +  i);  i++)
 	{
-		for (j = 0;  j  <= 9; j++)
+		for (j =  0;  j   <=   9; j++)
 
 		{
-			if  (a[j] == *(s  +  i))
+			if  (a[j]   ==   *(s  +  i))
 
-				*(s + i) = b[j];
+				*(s + i)  =  b[j];
 		}
-
 	}
-}	return (s);
+	return (s);
+}
+
