@@ -1,5 +1,5 @@
 # include "main.h"
-
+# include <stdio.h>
 /**
  *_strcat - function concatenates two strings and output into a pointer
  *@des: destination folder of concatenation
