@@ -15,10 +15,15 @@ char *leet(char *)
 	Char b[] =  "443007711";
 
 
-	for (i = 0 ;  *(s + i) ;  i++)
+	for (i = 0;  *(s  +  i);  i++)
 	{
-		for (a[j] == *(s+i))
-			*(s + i) = b[j];
+		for (j = 0;  j  <= 9; j++)
+
+		{
+			if  (a[j] == *(s  +  i))
+
+				*(s + i) = b[j];
+		}
+
 	}
-	return (s);
-}
+}	return (s);
