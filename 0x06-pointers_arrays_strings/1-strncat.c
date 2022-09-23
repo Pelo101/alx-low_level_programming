@@ -1,4 +1,4 @@
-# include "main.h"
+# includE "main.h"
 
 /**
  * _strncat - concatenate two strings but add inputed number of bytes
@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int index = 0;
 
-      int dest_len = 0;
+	int dest_len = 0;
 
 
 	while (dest[index++])
