@@ -1,13 +1,13 @@
 # include "main.h"
 
-/*
- * string_touppe: changes all lowercase letters to uppercase
+/**
+ * string_toupper - changes all lowercase letters to uppercase
  * @str: string to be changed
  *
  *Return: uppercase
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 
 	int i = 0;
