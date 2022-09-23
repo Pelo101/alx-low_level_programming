@@ -1,13 +1,14 @@
 # include "main.h"
 
 /**
- * cap_string - capitalizes all words in a string
- * @s: string to capitalize
+ *cap_string - capitalizes all words in a string
+ *@s: string to capitalize
  *
  * Return: address of s
  */
 
 char *cap_string(char *s)
+
 {
 
 	int i = 0;
@@ -21,7 +22,7 @@ char *cap_string(char *s)
 
 		if  (*(s + i)  >=  'a' &&   *(s + i) <= 'z')
 		{
-			if (i == 0)
+			if (i  ==   0)
 				*(s + i)  -= 'a' - 'A';
 
 			else
@@ -29,7 +30,7 @@ char *cap_string(char *s)
 			{
 				for (j  =  0;  j  <=  12;  j++)
 				{
-					if (a[j] == *(s + i - 1))
+					if (a[j]  ==  *(s + i - 1))
 
 						*(s  + i)  -=  'a' - 'A';
 
