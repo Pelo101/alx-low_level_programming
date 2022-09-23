@@ -1,4 +1,4 @@
-# includE "main.h"
+# include "main.h"
 
 /**
  * _strncat - concatenate two strings but add inputed number of bytes
