@@ -1,9 +1,8 @@
- #ifndef FILE_PI
- #define FILE_PI
+ #ifndef PI
  #define PI 3.14159265359
 
 
 
-#endif
+#endif /* PI */
 
 
