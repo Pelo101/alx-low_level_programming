@@ -3,14 +3,12 @@
 /**
  *print_name - prints a name
  *@name: name of a pointer
- *@f:function used to call pointer
+ *@f: void function used to call pointer
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (name  ==  NULL ||  f  ==  NULL)
-
-		return;
 
 	f(name);
 
