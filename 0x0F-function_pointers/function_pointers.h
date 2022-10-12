@@ -1,11 +1,11 @@
- #ifndef Function_pointer.H
- #define Function_pointer.H
+ #ifndef Function_pointers_h
+ #define Function_pointers_h
 
 #include <stdio.h>
 #include <stdlib.h>
 
 
-int_putchar(char c);
+int _putchar(char c);
 
 void print_name(char *name, void (*f)(char *));
 
