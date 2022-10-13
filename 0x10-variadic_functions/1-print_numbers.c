@@ -9,7 +9,9 @@
  *
  * Return: void
  */
+
 void print_numbers(const char *separator, const unsigned int n, ...)
+
 {
 	unsigned int i;
 	int num;
@@ -25,4 +27,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(list);
+
 }
