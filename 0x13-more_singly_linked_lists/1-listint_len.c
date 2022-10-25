@@ -12,16 +12,18 @@ size_t listint_len(const listint_t *h)
 {
 	const listint_t *ap = h;
 
-	size_t fruits;
-
+	size_t count = 0;
 
 	ap = h;
 
 	while (ap != NULL)
+
 	{
-		fruits++;
+		count++;
+
 		ap = ap->next;
+
 	}
-	return (fruits);
+	return (count);
 }
 
