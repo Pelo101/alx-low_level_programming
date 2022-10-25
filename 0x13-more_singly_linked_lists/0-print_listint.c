@@ -11,17 +11,17 @@
 size_t print_listint(const listint_t *h)
 
 {
-	print_listint fruits = *h;
-	size_t *next = 0;
+	const listint_t *ap;
+	size_t fruits = 0;
 
+	ap = h;
 
-
-	while (h != NULL)
+	while (ap != NULL)
 
 	{
-		printf("%d\n", h->n);
-		next++;
-		h = h->next;
+		printf("%d\n", ap->n);
+		fruits++;
+		ap = ap->next;
 	}
-	return (next);
+	return (fruits);
 }
