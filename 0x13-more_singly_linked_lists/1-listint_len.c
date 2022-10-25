@@ -19,7 +19,7 @@ size_t listint_len(const listint_t *h)
 
 	while (ap != NULL)
 	{
-		fruits += 1;
+		fruits++;
 		ap = ap->next;
 	}
 	return (fruits);
