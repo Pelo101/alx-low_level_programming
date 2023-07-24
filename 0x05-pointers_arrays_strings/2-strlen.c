@@ -17,3 +17,5 @@ int _strlen(char *s)
 	}
 	_putchar('\n');
 	return (0);
+
+}
