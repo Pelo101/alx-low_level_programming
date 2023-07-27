@@ -4,7 +4,7 @@
 
 /**
 *_strcmp -  function that compares two strings.
-* @sl: string 1.
+* @s1: string 1.
 * @s2: string 2.
 * Return: Always 0
 */
