@@ -14,4 +14,4 @@ char *cap_string(char *);
 
 
 
-#endif /* MAIN_H_
+#endif /* MAIN_H_ */
