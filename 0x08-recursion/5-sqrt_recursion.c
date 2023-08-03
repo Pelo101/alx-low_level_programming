@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
-* _sqrt_recursion - a function that returns the natural square root of a number.
+* _sqrt_recursion - a function that returns
+* the natural square root of a number.
 * @n: number.
 *Return: square root of n.
 */
@@ -11,7 +12,7 @@
 int _sqrt_recursion(int n)
 {
 
-	return(search_sqrt_recursion(n, 1));
+	return (search_sqrt_recursion(n, 1));
 }
 
 /**
