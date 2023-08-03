@@ -7,35 +7,28 @@
 *Return: square root of n.
 */
 
-int search _sqrt_recursion(int n, start, end)
-{
-	int mid;
 
-	if (start <= end)
-	{
-		mid = ( start + end) / 2;
-
-		if ((mid * mid <= n) && (mid + 1) * (mid  + 1) > n)
-		{
-			return mid;
-		}
-		else if (mid * mid < n)
-		{
-			return search_sqrt_recursion(mid + 1, end, n);
-		}
-		else
-		{
-			return search_sqrt_recursion(start, mid - 1, n);
-		}
-
-	}
-
-}
 int _sqrt_recursion(int n)
 {
+
+	return(search_sqrt_recursion(n, 1));
+}
+
+/**
+*search_sqrt_recursion - Square recursion
+* @n: integer.
+* @i: integer.
+* Return: search_sqrt_recursion
+*/
+
+int search_sqrt_recursion(int n, int i)
+{
 	if (n < 0)
-	{
 		return (-1);
-	}
- 	return _sqrt_recursion(n, 0, n);
+	if ((i * i) > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (search_sqrt_recursion(n, i + 1));
+
 }
