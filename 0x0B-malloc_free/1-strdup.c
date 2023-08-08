@@ -3,10 +3,11 @@
 
 
 /**
-*_strdup - function that returns a pointer to a newly allocated space in memory,
+*_strdup - function that returns a pointer to a
+*newly allocated space in memory,
 *which contains a copy of the string given as a parameter.
 *@str: source string.
-*
+*Return: pointer to copied string.
 */
 
 char *_strdup(char *str)
@@ -19,11 +20,15 @@ char *_strdup(char *str)
 	int len = 0;
 
 
+	if (str == NULL)
+		return (NULL);
+
+
 	while (str[len] != '\0')
 		len++;
 
 
-	p = (char*)malloc((len + 1) * sizeof(char));
+	p = (char *)malloc((len + 1) * sizeof(char));
 
 
 	if (p == NULL)
