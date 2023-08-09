@@ -43,10 +43,10 @@ char *str_concat(char *s1, char *s2)
 	for (j = 0; j < len2; j++)
 
 	{
-		ns[i + j] = s2[j];
+		ns[len1 + j] = s2[j];
 
 	}
-	ns[i + j] = '\0';
+	ns[len1 + len2] = '\0';
 
 
 	return (ns);
