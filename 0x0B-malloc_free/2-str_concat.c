@@ -5,6 +5,7 @@
  *str_concat -	function that concatenates two strings
  *@s1: string 1.
  *@s2: string 2.
+ *
  *Return: pointer with address of new string.
  */
 
@@ -30,9 +31,9 @@ char *str_concat(char *s1, char *s2)
 	ns = (char *)malloc((len1 + len2 + 1) * sizeof(char));
 
 	if (ns == NULL)
-
+	{
 		return (NULL);
-
+	}
 	for (i = 0; i < len1; i++)
 	{
 		ns[i] = s1[i];
