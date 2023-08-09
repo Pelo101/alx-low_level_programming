@@ -45,7 +45,7 @@ char *str_concat(char *s1, char *s2)
 		ns[i + j] = s2[j];
 
 	}
-	ns[i + j]	= '\0';
+	ns[i + j] = '\0';
 
 
 	return (ns);
