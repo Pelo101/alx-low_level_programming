@@ -7,44 +7,45 @@
  *
  * Return: A pointer to the concatenated string, or NULL if it fails.
  */
+
 char *argstostr(int ac, char **av)
 {
-
-	int  position = 0;
-	int i = 0;
 	int total_length = 0;
-	char *arg = av[i];
+	int i, j;
 	char *result;
+	int position = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
 	{
-		while (*arg)
-		{
+		j = 0;
+		while (av[i][j] != '\0')
+	{
 			total_length++;
-			arg++;
+			j++;
 		}
 		total_length++;
 	}
 
 	result = (char *)malloc((total_length + 1) * sizeof(char));
-
 	if (result == NULL)
 		return (NULL);
 
-	while (i < ac)
+	for (i = 0; i < ac; i++)
 	{
-		while (*arg)
-		{	result[position++] = *arg;
-			arg++;
+		j = 0;
+		while (av[i][j] != '\0')
+	{
+			result[position] = av[i][j];
+			position++;
+			j++;
 		}
 		result[position] = '\n';
 		position++;
-		i++;
 	}
-	result[total_length] = '\0';
+	result[position] = '\0';
 	return (result);
 }
 
