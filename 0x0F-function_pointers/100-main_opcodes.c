@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 
 	num_bytes = atoi(argv[1]);
@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	if (num_bytes < 0)
 	{
 		printf("Error\n");
-		return 2;
+		return (2);
 	}
 
 	main_ptr = (unsigned char *)main;
@@ -41,6 +41,6 @@ int main(int argc, char *argv[])
 	}
 	printf("\n");
 
-	return 0;
+	return (0);
 }
 
