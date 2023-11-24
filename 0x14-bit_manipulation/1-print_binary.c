@@ -10,26 +10,14 @@
 void print_binary(unsigned long int n)
 {
 
-	unsigned long int mask = sizeof(n) * 8;
-	int bit;
-	int leading_zeros = 1;
-	int i;
-
-	if (n == 0)
+	if (n > 1)
 	{
-		_putchar('0');
-	}
+		print_binary(n >> 1);
 
-	for (i = mask  - 1 ; i >= 0;  --i)
-	{
-		bit = (n & (1 << i)) >> i;
 
-		if (bit == 1 || !leading_zeros)
-		{
-			_putchar(bit + '0');
-			leading_zeros = 0;
-		}
-	}
-	_putchar('\n');
+	}	
+	_putchar((n & 1) + '0');
+
+
 
 }
