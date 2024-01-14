@@ -6,6 +6,7 @@
  *get_dnodeint_at_index - program returns node at index.
  *@head: start of linkedn list
  *@index: position of node.
+ *Return: if the node does not exist, return NULL
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
