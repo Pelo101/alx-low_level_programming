@@ -21,11 +21,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	}
 
 	index = key_index((const unsigned char *)key, ht->size);
-	array = ht->array[index];
 
+	if (index >= ht->size)
+	{
+		return (NULL);
+	}
+	array = ht->array[index];
 	curr_node = array;
 
-	if (curr_node != NULL)
+	while (curr_node != NULL)
 	{
 		if (strcmp(key, curr_node->key) == 0)
 		{
